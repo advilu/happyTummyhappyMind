@@ -8,8 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Righteous|Sniglet" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src=""></script>
-    <title>happyTummyhappyMind</title>
+    <script src="firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <title>HappyTummy</title>
 </head>
 <body style="background-color: white;">
     
@@ -44,7 +45,7 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2 pr-5" style="color: #FAE3D9;" type="search" placeholder="Search for Recipes" aria-label="Search">
+            <input class="form-control mr-sm-2 pr-5" style="color: gray;" type="search" placeholder="Search for Recipes" aria-label="Search">
             <button class="btn btn-outline-info my-2 my-sm-0 mr-4" style="color: white;"  type="submit">Search</button>
           </form>
         </div>
@@ -120,10 +121,10 @@
             <div class="col-md-3 mt-md-0 mt-3 mb-2">
                     <h5 class="text-uppercase">Stay Connected</h5>
                     <p>Sign-up for our Newsletter!</p>
-                    <form class="form-inline my-2 my-lg-0">
-                      <input class="form-control mr-sm-2 mb-2" style="color: #FAE3D9;" type="email" placeholder="e-mail" aria-label="email">
+                    <form class="form-inline my-2 my-lg-0 justify-content-center">
+                      <input id="email-input" class="form-control mr-sm-2 mb-2" style="color: gray;" type="email" placeholder="e-mail" aria-label="email" value="">
                       <br>
-                      <button class="btn btn-outline-info my-2 my-sm-0 "  type="submit">Yes, Sign Me Up!</button>
+                      <button id="submit" class="btn btn-outline-info my-2 my-sm-0 "  type="submit">Yes, Sign Me Up!</button>
                     </form>
 
             </div>
