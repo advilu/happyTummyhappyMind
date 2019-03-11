@@ -9,48 +9,89 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Righteous|Sniglet" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src=""></script>
-    <title>happyTummyhappyMind</title>
+    <script type="text/javascript" src="firebase.js"></script>
+    <script type="text/javascript" src="config.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <title>HappyTummy</title>
 </head>
-<body style="background-color: #FAE3D9;">
+<body style="background-color: white;">
     
     <!-- Header with Site Name -->
-    <div class="container-fluid" style="background-color: #FAE3D9;">
+    <!-- <div class="container-fluid" style="background-color: #FAE3D9;">
       <div class="row">
           <div class="col-md-12 jumbotron text-center display-3" style="font-family: 'Montserrat'; background-color: #FAE3D9; color: #61C0BF;">
             happyTummyHappyMind
           </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-xl container-fluid" style="color: #F88379; background-color: #BBDED6; width: 100%; white-space: nowrap;">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="index.html" style="color: #F88379;"><i class="far fa-smile-beam"></i></a>
-      
+    <nav class="navbar navbar-expand-xl container-fluid" style="color: white; background-color: #61C0BF; font-family: 'Montserrat';">
+        <!-- <div class="col-md-2 justify-content-end"> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand " href="index.html" style="color: white; font-family: 'Montserrat'; font-size: 50px;"><i class="far fa-smile-beam ml-3" ></i>   HappyTummy</a>
+        <!-- </div> -->
+
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html" style="color: #F88379;">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link ml-5 pl-4" href="index.html" style="color: white;">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html" style="color: #F88379;">Blog</a>
+              <a class="nav-link ml-3" href="blog.html" style="color: white;">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="contact.html" tabindex="-1" aria-disabled="true" style="color: #F88379;">Contact</a>
+              <a class="nav-link ml-3" href="contact.html" tabindex="-1" aria-disabled="true" style="color: white;">Contact</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2 text-muted pr-5" type="search" placeholder="Recipes Search" aria-label="Search">
-            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2 pr-5" style="color: gray;" type="search" placeholder="Search for Recipes" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0 mr-4" style="color: white;"  type="submit">Search</button>
           </form>
         </div>
     </nav>
 
         <!-- Brand New Container Starts (BODY) -->
-    <div class="container-fluid">
+    <div class="container-fluid mt-3">
+        <div class="row">
+
+            
+
+            <div class="col-md-7 mt-3 mb-3 mr-4 ml-4  p-4 rounded-lg" style="background-color: rgba(250, 227, 217, 0.75); font-family: 'Montserrat';">
+
+                <h3 class="display-5 text-center p-2" style="color:#61C0BF;">Welcome to HappyTummy!</h3>
+               
+               
+                <p> <img class="mr-3 mb-2 mt-1" src="https://spopsprod.blob.core.windows.net/cp-cms/402b2f6952659c13c0ef/default" ALIGN="left">  Curious and is not adventurous come Fyre Festival together on hooked me. A private life-changing experience Exuma island: of a Fyre Festival the promise Summary These in but weekends go pulled me beyond the marketing campaign beauty of coordinated influencer a remote launch a beach, its globally to vast landscape influential personalities and perfect the most waters. The as among focus is widely recognized on a he is global audience tech space, coming together In the in sharing Fyre Cay a life Set Where: changing experience. Disclosure DJ Fyre Two Major Lazer weekends 40,000 G. O. O. D. Music guests The Exumas Headliners.
+                        <br><br>
+                        Beauty of Festival The a remote Is Fyre beach, its after launch. Vast landscape 48 hours and perfect In the waters. The media impressions focus is views 1. 5MM on a social media global audience of 300MM coming together a total in sharing press, amassing a life amount of changing experience. An extraordinary Fyre Two to garner weekends 40,000 the brand guests The campaign enabled Exumas Headliners outreach marketing G. O. O. D. Music Festival’s influencer Family. Within saying Fyre five days, press is she amassed What the approximately 6 ticket purchases. Million unique views and impressions, leading in website to an exponential leap.
+                        <br><br>
+                        </p>
+
+            </div>
+
+            <div class="col-md-4 m-3 mb-3 p-4 rounded-lg" style="background-color: rgba(250, 227, 217, 0.75); font-family: 'Righteous';">
+                
+                <h3 class="display-5 text-center p-2 pb-3 ml-3 mr-3" style="color:#61C0BF; border-bottom: 3px solid #61C0BF">Top Food Picks</h3>
+
+                <p></p>
+
+            </div>
+
+        </div>
+
+        <!-- ADs API -->
+        <div class="row mb-5">
+            <div>
+
+                <!-- ADS CONTENT -->
+
+            </div>
+        </div>
+
+
 
 
 
