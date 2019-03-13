@@ -29,22 +29,4 @@ $(document).ready(function(){
      $("#email-input").val("");
     }
 
-
-    // 
-
-    // Nutrition API edamam.com
-    var queryURL = "https://api.edamam.com/api/nutrition-data?app_id=b7bd3349&app_key=6b0366fe435019d42d6fa852ce355631&ingr=1%20large%20apple";
-
-    // AJAX call
-    $.ajax({
-      url: queryURL,
-      method: "GET"
-    }).then(function(response) {
-      console.log(response);
-      var results = response.data;
-    });
-
-
-
-
 });
